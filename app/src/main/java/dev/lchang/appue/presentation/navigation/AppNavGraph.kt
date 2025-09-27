@@ -1,5 +1,6 @@
 package dev.lchang.appue.presentation.navigation
 
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
@@ -19,6 +20,23 @@ fun AppNavGraph(){
 
         composable("register") { RegisterScreen(navController) }
         composable ("login") { LoginScreen(navController) }
-        composable ("home") { HomeScreen() }
+
+        composable ("home") {
+            DrawerScaffold(navController) {
+                HomeScreen()
+            }
+
+        }
+        composable ("permissions") {
+            DrawerScaffold(navController) {
+                Text("Pantalla de permisos proximamente")
+            }
+        }
+
+        composable ("favorites") {
+            DrawerScaffold(navController) {
+                Text("Pantalla de favoritos proximamente")
+            }
+        }
     }
 }
