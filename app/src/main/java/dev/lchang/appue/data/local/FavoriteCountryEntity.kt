@@ -1,5 +1,3 @@
-package dev.lchang.appue.data.local
-
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 
@@ -13,5 +11,3 @@ data class FavoriteCountryEntity(
 
 
 
-
-// Agrgar dependecias buld. gradle.kts
