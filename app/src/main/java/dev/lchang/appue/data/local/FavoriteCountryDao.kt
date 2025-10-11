@@ -1,5 +1,6 @@
 package dev.lchang.appue.data.local
 
+import FavoriteCountryEntity
 import androidx.room.Dao
 import androidx.room.Delete
 import androidx.room.Insert
@@ -19,7 +20,8 @@ interface FavoriteCountryDao {
 
     //Query
     @Query("SELECT * FROM favorite_countries")
-    suspend fun getAll(): Flow<List<FavoriteCountryEntity>>
+    fun getAll(): Flow<List<FavoriteCountryEntity>>
+
 
 
 

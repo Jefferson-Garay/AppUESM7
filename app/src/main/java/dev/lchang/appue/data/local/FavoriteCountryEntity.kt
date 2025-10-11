@@ -5,7 +5,7 @@ import androidx.room.PrimaryKey
 data class FavoriteCountryEntity(
     @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val name: String,
-    val Ranking: Int,
+    val ranking: Int,
     val imagenUrl: String
 )
 
