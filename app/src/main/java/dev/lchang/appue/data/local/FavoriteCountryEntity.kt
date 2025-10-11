@@ -1,7 +1,8 @@
-package dev.lchang.appue.data.local
+import androidx.room.Entity
+import androidx.room.PrimaryKey
 
 data class FavoriteCountryEntity(
-    val id: Int = 0,
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
     val name: String,
     val Ranking: Int,
     val imagenUrl: String
